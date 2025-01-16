@@ -23,7 +23,7 @@ Page::Page(QWidget *parent)
     db.setHostName("localhost");
     db.setPort(3306);
     db.setUserName("root");
-    db.setPassword("Zaqmlp123456");
+    db.setPassword("root");
     // db.setUserName(username);
     // db.setPassword(password);
     db.open();
