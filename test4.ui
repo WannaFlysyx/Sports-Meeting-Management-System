@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test4</class>
+ <widget class="QWidget" name="Test4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Test4</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(x1:0, y1:0.5, x2:1, y2:0.5,
+                                      stop:0 #021D38, stop:1 #021D38);
+            color: white;
+            font-weight: bold;
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>80</y>
+     <width>114</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查询运动员信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>270</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查询学院排名</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>369</y>
+     <width>801</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>120</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>增加学院</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>120</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>修改领队</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>10</y>
+     <width>92</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>新建连接</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>11</y>
+     <width>128</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>比赛ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="spinBox">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>运动员ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="spinBox_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>比赛排名：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="spinBox_3"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>比赛分数：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="spinBox_4"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>99</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>状态：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_22">
+      <property name="text">
+       <string>未连接</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>453</x>
+     <y>170</y>
+     <width>361</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="3" column="1" colspan="3">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="lineEdit_11">
+        <property name="styleSheet">
+         <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+        </property>
+        <property name="placeholderText">
+         <string>OldLeader</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_12">
+        <property name="styleSheet">
+         <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+        </property>
+        <property name="placeholderText">
+         <string>NewLeader</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>学院领队：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_10">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>CollegeName</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>学院名称：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>学院分数：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="spinBox_7">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>学院ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QSpinBox" name="spinBox_6">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>270</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_17">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>运动员姓名：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>AName</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_18">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>运动员性别：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_16">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>运动员ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="spinBox_10"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_9">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Sex</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>270</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="1" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_13">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ASID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2" colspan="2">
+     <widget class="QSpinBox" name="spinBox_9"/>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label_19">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>学院ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QSpinBox" name="spinBox_8"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_21">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>学号：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label_20">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>运动员分数：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>421</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>NewName</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>比赛性别：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>比赛名称：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+color: white;
+font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Sex</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>比赛ID：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>OldName</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="spinBox_5">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>12</y>
+     <width>291</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>账    户：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>密    码：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+            color: white;
+            font-weight: bold;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-weight: bold;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>学    号：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="styleSheet">
+       <string notr="true">background-color:#7E92B5;
+color: white;
+font-weight: bold;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ASID</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查看所有比赛成绩</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>添加比赛成绩</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>删除比赛</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+color: white;
+border-radius: 6px;
+font-weight: bold;
+text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>添加比赛</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>修改比赛</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>270</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>添加运动员</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>270</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>删除运动员</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_13">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>330</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查看所有运动员信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>330</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查看所有比赛信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#65789B;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+</string>
+   </property>
+   <property name="text">
+    <string>查询运动员比赛</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindAthleteInfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindCollegeRank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>Button()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>AddScore()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>692</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>704</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindAllScore()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>699</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>AddCompetition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>DeleteCompetition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>430</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>UpdateCompetition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>AddCollege()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>680</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>UpdateLeader()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>800</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>AddAthlete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>DeleteAthlete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindAllAthlete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindAllCompetition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>540</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>Test4</receiver>
+   <slot>FindAthleteCompetition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>745</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Loginbutton()</slot>
+  <slot>FindAthleteInfo()</slot>
+  <slot>FindCollegeRank()</slot>
+  <slot>Logoutbutton()</slot>
+  <slot>Button()</slot>
+  <slot>AddScore()</slot>
+  <slot>FindAllScore()</slot>
+  <slot>AddCompetition()</slot>
+  <slot>DeleteCompetition()</slot>
+  <slot>UpdateCompetition()</slot>
+  <slot>AddCollege()</slot>
+  <slot>UpdateLeader()</slot>
+  <slot>AddAthlete()</slot>
+  <slot>UpdateAthlete()</slot>
+  <slot>DeleteAthlete()</slot>
+  <slot>FindAllAthlete()</slot>
+  <slot>FindAllCompetition()</slot>
+  <slot>FindAthleteCompetition()</slot>
+ </slots>
+</ui>
